@@ -1,6 +1,12 @@
 ## BookMyMovie
 
-A BookMyMovie is a movie ticket booking application that allows users to booking Movie tickets as per the selected time and location.
+A BookMyMovie is a movie ticket booking application that allows users to booking Movie tickets as per the selected time and location.<br>
+
+It can be viewed online [here]
+```
+https://bookmymovieticket.herokuapp.com/
+
+```
 
 ## Getting Started
 
@@ -21,7 +27,10 @@ A BookMyMovie is a movie ticket booking application that allows users to booking
    ```
    $ bundle install
    ```
-
+4. Setup database:
+    ```
+    $ rake db:create db:migrate db:setup
+    ```
 
 ## Usage
 
