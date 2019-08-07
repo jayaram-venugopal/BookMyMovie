@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Sign up!</h3>
+              <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+              <%= f.select :gender, options_for_select(["male","female","prefer_not_to_disclose"]), {} %>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <%= f.password_field :password, autocomplete: "new-password" %>
+              <% end %><br />
+              <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+              <div class="actions">
+                <%= f.submit "Sign up", class:"btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"%>
+              </div>
+              <% end %>
+              <div class="text-center"><%= render "devise/shared/links" %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
