@@ -41,7 +41,11 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem "bootstrap_form"
 gem 'dotenv-rails'
-gem 'httparty'
+gem 'draper'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap4'
+gem "bootstrap-table-rails"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

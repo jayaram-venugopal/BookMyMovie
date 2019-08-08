@@ -17,6 +17,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require bootstrap-table/bootstrap-table
 
 window.setTimeout(function () {
   $(".alert").fadeTo(500, 0).slideUp(500, function () {
