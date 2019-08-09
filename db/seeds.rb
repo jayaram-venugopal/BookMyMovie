@@ -38,3 +38,8 @@ result["films"].each do |film|
   end
 end
 
+ticket_costs = [150, 300, 215, 155, 350, 200]
+
+Theater.all.each do |theater|
+  theater.update(:ticket_cost => ticket_costs[Random.rand(ticket_costs.length)])
+end

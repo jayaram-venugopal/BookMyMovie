@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   devise_for :users, controllers: { registrations: 'users/registrations' }
-  resources :shows, only: [:index, :show]
+  resources :shows, only: [:index, :show] do
+    collection do
+      get '/:id/seating', to: 'shows#seating'
+    end
+  end
 end

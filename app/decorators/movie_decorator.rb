@@ -6,11 +6,10 @@ class MovieDecorator < ApplicationDecorator
   end
   
   def duration
-    "Duration: #{object.duration} mins"
+    "#{object.duration} mins"
   end
   
   def release_dates
-    "Release Date: #{object.release_dates.strftime("%a %m/%d/%y")}"
+    "#{object.release_dates.strftime("%m/%d/%y")}"
   end
- 
 end
