@@ -20,19 +20,19 @@
           <h6 class="text-gray-dark"><%= show.theater.name %></h6>
           <div>
             <% if show.night %>
-            <a href="/show/<%= show.theater.id %>/seating?timing=<%= show.night %>"
+            <a href="/shows/<%= show.theater.id %>/seating?timing=<%= show.night %>"
               class="btn btn-sm btn-outline-primary mr-2 float-lg-right">10.00 PM</a>
             <% end %>
             <% if show.evening %>
-            <a href="/show/<%= show.theater.id %>/seating?timing=<%= show.evening %>"
+            <a href="/showss/<%= show.theater.id %>/seating?timing=<%= show.evening %>"
               class="btn btn-sm btn-outline-primary mr-2 float-lg-right">05.00 PM</a>
             <% end %>
             <% if show.matinee %>
-            <a href="/show/<%= show.theater.id %>/seating?timing=<%= show.matinee %>"
+            <a href="/shows/<%= show.theater.id %>/seating?timing=<%= show.matinee %>"
               class="btn btn-sm btn-outline-primary mr-2 float-lg-right">02.00 PM</a>
             <% end %>
             <% if show.morning %>
-            <a href="/show/<%= show.theater.id %>/seating?timing=<%= show.morning %>"
+            <a href="/shows/<%= show.theater.id %>/seating?timing=<%= show.morning %>"
               class="btn btn-sm btn-outline-primary mr-2 float-lg-right">10.30 AM</a>
             <% end %>
           </div>
